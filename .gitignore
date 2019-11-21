@@ -1,0 +1,6 @@
+.DS_Store
+.zos.session
+.vscode
+build
+node_modules
+yarn-error.log

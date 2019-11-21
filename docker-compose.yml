@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  truffle-develop:
+    build: .
+    command: ["npx", "truffle", "develop", "--log"]
+    ports:
+      - "9545:9545"
+
+  app:
+    build: .
+    depends_on:
+      - truffle-develop

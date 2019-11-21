@@ -1,0 +1,265 @@
+{
+  "contracts": {
+    "Lockbox": {
+      "address": "0x52cf027be33ed7815B41f1B403436d140E9B862C",
+      "constructorCode": "608060405234801561001057600080fd5b50612a90806100206000396000f3fe",
+      "bodyBytecodeHash": "dd1414328dc1ac68fb5b73d256d7637649f828f376ed7a544991a606fe1266a4",
+      "localBytecodeHash": "a9d68e60e19f85707311842b084d24852669bb97fc3a77c69f2898f52f734537",
+      "deployedBytecodeHash": "a9d68e60e19f85707311842b084d24852669bb97fc3a77c69f2898f52f734537",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 979,
+              "type": "t_mapping<t_bool>",
+              "src": "150:32:3"
+            }
+          ]
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_uint8": {
+          "id": "t_uint8",
+          "kind": "elementary",
+          "label": "uint8"
+        },
+        "t_struct<Lockbox.LockboxState>": {
+          "id": "t_struct<Lockbox.LockboxState>",
+          "kind": "struct",
+          "label": "Lockbox.LockboxState",
+          "members": [
+            {
+              "label": "writerAddress",
+              "astId": 74,
+              "type": "t_address",
+              "src": "2594:21:1"
+            },
+            {
+              "label": "consumerAddress",
+              "astId": 76,
+              "type": "t_address",
+              "src": "2621:23:1"
+            },
+            {
+              "label": "price",
+              "astId": 78,
+              "type": "t_uint256",
+              "src": "2650:13:1"
+            },
+            {
+              "label": "smpcMembers",
+              "astId": 81,
+              "type": "t_array:dyn<t_address>",
+              "src": "2740:21:1"
+            },
+            {
+              "label": "requests",
+              "astId": 85,
+              "type": "t_mapping<t_struct<Lockbox.Request>>",
+              "src": "2768:36:1"
+            }
+          ]
+        },
+        "t_array:dyn<t_address>": {
+          "id": "t_array:dyn<t_address>",
+          "valueType": "t_address",
+          "length": "dyn",
+          "kind": "array",
+          "label": "address[]"
+        },
+        "t_struct<Lockbox.Request>": {
+          "id": "t_struct<Lockbox.Request>",
+          "kind": "struct",
+          "label": "Lockbox.Request",
+          "members": [
+            {
+              "label": "price",
+              "astId": 69,
+              "type": "t_uint256",
+              "src": "2529:13:1"
+            },
+            {
+              "label": "exists",
+              "astId": 71,
+              "type": "t_bool",
+              "src": "2548:11:1"
+            }
+          ]
+        },
+        "t_mapping<t_struct<Lockbox.Request>>": {
+          "id": "t_mapping<t_struct<Lockbox.Request>>",
+          "valueType": "t_struct<Lockbox.Request>",
+          "label": "mapping(key => Lockbox.Request)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_struct<Lockbox.LockboxState>>": {
+          "id": "t_mapping<t_struct<Lockbox.LockboxState>>",
+          "valueType": "t_struct<Lockbox.LockboxState>",
+          "label": "mapping(key => Lockbox.LockboxState)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 1977,
+          "type": "t_bool",
+          "src": "757:24:10"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 1979,
+          "type": "t_bool",
+          "src": "876:25:10"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 2028,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:10"
+        },
+        {
+          "contract": "PauserRole",
+          "path": "openzeppelin-eth/contracts/access/roles/PauserRole.sol",
+          "label": "_pausers",
+          "astId": 1086,
+          "type": "t_struct<Roles.Role>",
+          "src": "271:27:4"
+        },
+        {
+          "contract": "PauserRole",
+          "path": "openzeppelin-eth/contracts/access/roles/PauserRole.sol",
+          "label": "______gap",
+          "astId": 1185,
+          "type": "t_array:50<t_uint256>",
+          "src": "1081:29:4"
+        },
+        {
+          "contract": "Pausable",
+          "path": "openzeppelin-eth/contracts/lifecycle/Pausable.sol",
+          "label": "_paused",
+          "astId": 1204,
+          "type": "t_bool",
+          "src": "352:20:5"
+        },
+        {
+          "contract": "Pausable",
+          "path": "openzeppelin-eth/contracts/lifecycle/Pausable.sol",
+          "label": "______gap",
+          "astId": 1285,
+          "type": "t_array:50<t_uint256>",
+          "src": "1429:29:5"
+        },
+        {
+          "contract": "Lockbox",
+          "path": "contracts/Lockbox.sol",
+          "label": "protocolToken",
+          "astId": 57,
+          "type": "t_address",
+          "src": "1667:27:1"
+        },
+        {
+          "contract": "Lockbox",
+          "path": "contracts/Lockbox.sol",
+          "label": "migrationCount",
+          "astId": 67,
+          "type": "t_uint8",
+          "src": "2476:27:1"
+        },
+        {
+          "contract": "Lockbox",
+          "path": "contracts/Lockbox.sol",
+          "label": "lockboxes",
+          "astId": 90,
+          "type": "t_mapping<t_struct<Lockbox.LockboxState>>",
+          "src": "2904:50:1"
+        },
+        {
+          "contract": "Lockbox",
+          "path": "contracts/Lockbox.sol",
+          "label": "nextLockboxId",
+          "astId": 92,
+          "type": "t_uint256",
+          "src": "2959:28:1"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [
+          {
+            "contract": "PauserRole",
+            "path": "openzeppelin-eth/contracts/access/roles/PauserRole.sol",
+            "label": "_pausers",
+            "astId": 1086,
+            "type": "t_struct<Roles.Role>",
+            "src": "271:27:4"
+          },
+          {
+            "contract": "Lockbox",
+            "path": "contracts/Lockbox.sol",
+            "label": "lockboxes",
+            "astId": 90,
+            "type": "t_mapping<t_struct<Lockbox.LockboxState>>",
+            "src": "2904:50:1"
+          }
+        ],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "finprint-protocol/Lockbox": [
+      {
+        "address": "0x0bab264Acf3901cdcdb95e960478290D7fdaf978",
+        "version": "0.1.0",
+        "implementation": "0x52cf027be33ed7815B41f1B403436d140E9B862C"
+      }
+    ]
+  },
+  "zosversion": "2.2",
+  "version": "0.1.0",
+  "proxyAdmin": {
+    "address": "0x548c0454cf2582C8a67C95C85042297Be223B7d6"
+  }
+}

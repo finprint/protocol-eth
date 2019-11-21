@@ -1,0 +1,43 @@
+{
+  "name": "@finprint/protocol-eth",
+  "version": "0.1.0",
+  "author": "Finprint",
+  "license": "BSD-3-Clause",
+  "description": "Solidity smart contracts for the Finprint protocol.",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "npx truffle compile",
+    "eslint-fix": "eslint --fix \"**/*.js\"",
+    "lint": "solium -d contracts && eslint \"**/*.js\"",
+    "install": "./scripts/install.sh",
+    "load-deployed": "node ./scripts/load_deployed_addresses.js",
+    "save-deployed": "node ./scripts/save_deployed_addresses.js",
+    "start": "npx truffle develop --log",
+    "test": "npx truffle test"
+  },
+  "dependencies": {
+    "node-forge": "0.8.2",
+    "openzeppelin-eth": "2.1",
+    "openzeppelin-solidity": "2.1",
+    "solidity-BigNumber": "git+ssh://git@github.com/finprint/solidity-BigNumber.git#a1f46ab",
+    "truffle": "5.0",
+    "truffle-hdwallet-provider": "1.0",
+    "web3-utils": "1.2.1",
+    "zos": "2.2",
+    "zos-lib": "2.2"
+  },
+  "devDependencies": {
+    "bn.js": "5.0.0",
+    "eslint": "6.4.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eth-gas-reporter": "0.2.0",
+    "ethlint": "1.2.3",
+    "lodash": "4.17.10",
+    "remix-ide": "https://github.com/finprint/remix-ide.git#0f2dd016",
+    "uuid": "3.2.1",
+    "web3": "1.0.0-beta.37"
+  }
+}

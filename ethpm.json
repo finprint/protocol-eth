@@ -1,0 +1,13 @@
+{
+  "package_name": "finprint",
+  "version": "0.0.1",
+  "description": "finprint",
+  "keywords": [
+    "ethereum",
+    "finprint"
+  ],
+  "dependencies": {
+    "tokens": "^0.0.1"
+  },
+  "license": "MIT"
+}

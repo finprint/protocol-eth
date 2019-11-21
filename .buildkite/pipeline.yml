@@ -1,0 +1,6 @@
+steps:
+  - name: ":docker:"
+    command: ./test.sh
+    plugins:
+      docker-compose#v2.1.0:
+        run: app

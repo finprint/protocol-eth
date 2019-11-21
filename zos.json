@@ -1,0 +1,8 @@
+{
+  "zosversion": "2.2",
+  "name": "finprint-protocol",
+  "version": "0.1.0",
+  "contracts": {
+    "Lockbox": "Lockbox"
+  }
+}

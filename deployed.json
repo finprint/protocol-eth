@@ -1,0 +1,24 @@
+{
+  "Lockbox": {
+    "1": {
+      "address": "0x0bab264Acf3901cdcdb95e960478290D7fdaf978",
+      "links": {}
+    },
+    "42": {
+      "address": "0xD263B91793bdB79CA1ae40cDf82063af2cD44111",
+      "links": {}
+    }
+  },
+  "FinprintToken": {
+    "1": {
+      "address": "0x252dCCa7ce181AF346fDD8A7b46BD97b286B50fC",
+      "links": {},
+      "transactionHash": "0x00f4f713d4f4a9a8dd858065590c0ee455ea7a4b1441ad069144ec5a173e4e90"
+    },
+    "42": {
+      "address": "0xDBDf47E7c5AD0e94d3F95d31b8300c6A8d8D9fcA",
+      "links": {},
+      "transactionHash": "0x58afc4ca30bd970e3b61872b336966275b0a5a5c876dcff63e29c491d62847ef"
+    }
+  }
+}
