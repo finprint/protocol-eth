@@ -35,7 +35,7 @@
     "eslint-plugin-import": "2.18.2",
     "eth-gas-reporter": "0.2.0",
     "ethlint": "1.2.3",
-    "lodash": "4.17.10",
+    "lodash": "4.17.21",
     "remix-ide": "https://github.com/finprint/remix-ide.git#0f2dd016",
     "uuid": "3.2.1",
     "web3": "1.0.0-beta.37"
