@@ -18,7 +18,7 @@
     "test": "npx truffle test"
   },
   "dependencies": {
-    "node-forge": "0.8.2",
+    "node-forge": "1.0.0",
     "openzeppelin-eth": "2.1",
     "openzeppelin-solidity": "2.1",
     "solidity-BigNumber": "git+ssh://git@github.com/finprint/solidity-BigNumber.git",
